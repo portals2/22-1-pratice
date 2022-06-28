@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 30px;
+        }
+        p{
+            padding: 20px auto;
+        }
+        .tiltle{
+            padding: 5px;
+            border: 1px solid #ccc;
+            background: #b2fea7;
+        }
+        #total, #result{
+            width: auto;
+            padding-left: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p><span class='tiltle'>응모자 수</span><span id='total'></span></p>
+    <p><span class='tiltle'>당첨번호</span><span id='result'></span></p>
+    <script>
+        let seed = prompt('응모자 수')
+
+        let today = new Date();
+        let current = today.getSeconds();
+        let rnum = (current % seed) +1;
+
+        let totalArca = document.getElementById('total');
+        let resultArca = document.getElementById('result');
+        totalArca.innerHTML = seed + '명';
+        resultArca.innerHTML = rnum + '번';
+    </script>
+</body>
+</html>
