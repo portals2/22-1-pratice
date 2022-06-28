@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 이미지는 이미 보여지고 있다. (#은 투명) -->
+    <!-- <img id="r" src="#" width="200px"> 
+    <img id="s_img" src="#" width="200px"> -->
+    <script>
+        // let seed = prompt('성별 0 or 1')
+        // s = document.getElementById('r') //r의 id를 가진 것을 가져와 s에 저장
+        // s.src = seed == '0'?'man' : 'girl' //s.src를 경우에 따라 man or girl로 교체
+        //-------------------------------------
+        // let msg = 'asdadadad'
+        // alert(msg) //알람 표시
+        //-------------------------------------
+        // let a = prompt('1234'); //확인과 취소가 있는 알람창
+        // if (a == 1){
+        //     document.write('progrma');
+        // }
+        // else if (a == 2) {
+        //     document.write('<p>2학년');
+        // }
+        // else if (a == 3) {
+        //     document.write('<p>3학년');
+        // }
+        // else if (a == 4) {
+        //     document.write('<p>4학년');
+        // }
+        // else {
+        //     document.write('no');
+        // }
+        // -----------------------------------------
+        
+
+        // let su = prompt('123456789101112')
+        // let sp = '0'
+        // s = document.getElementById('s_img');
+        // src_link = '';
+        // if (su == '6'||su == '7'||su == '8') { //or에 모든 조건문이 완벽하게 적어야한다.
+        //     sp = '1'
+        // }
+        // else if (su == '9'||su == '10'||su == '11') {
+        //     sp = '2'
+        // }
+        // else if (su == '12'||su == '1'||su == '2') {
+        //     sp = '3'
+        // }
+        // else if (su == '3'||su == '4'||su == '5') {
+        //     sp = '4'
+        // }
+
+        // switch(sp){
+        //     case '1':{
+        //         document.write('<p>여름</p>');
+        //         src_link = 'bach.jpg';
+        //         break; //break문을 써야 된다.
+        //     }
+        //     case '2':{
+        //         document.write('<p>가을</p>');
+        //         s.src = 'bach.jpg';
+        //         break;
+        //     }
+        //     case '3':{
+        //         document.write('<p>겨울</p>');
+        //         break;
+        //     }
+        //     case '4':{
+        //         document.write('<p>봄</p>');
+        //         break;
+        //     }
+        //     default:{
+        //         document.write('asd');
+        //     }
+        // }
+        //s.src = src_link;
+        // ----------------------------------
+        
+        // let i = 1;
+        // document.write("asdasd");
+        // document.write("zxczxc");
+        // do{
+        //     document.write(i);
+        //     document.write('<br>');
+        //     i++;
+        // } while(i<10)
+        // -----------------------------
+
+        //1번
+        
+        // for (let i = 1; i<10; i++) {
+        //     document.write(i+'단입니다.<br>')
+        //     for(let j = 1; j<10; j++) {
+        //         document.write(i*j+'<br>')
+        //     }
+        // }
+
+        //2번
+        // let i = prompt('x~|x ∈ y')
+        // let k = prompt('y')
+        // for (i; i<=k; i++) {
+        //     document.write(i+'단입니다.<br>')
+        //     for(let j = 1; j<10; j++) {
+        //         document.write(i*j+'<br>')
+        //     }
+        // }
+
+        //3번
+        
+        //한층씩 내려갈때 마다 +2가 된다. 
+        //5 >  1+2+2+2+2 = 9 // 2*x-1
+        // let i = prompt('x')
+        // let all = 2*(i-1) //5번쨰 8
+        // let center = (all/2) // 4
+        // let y = 1
+        // for (k=0; k<i; k++){
+        //     for (let j=0; j <center; j++){
+        //         document.write('&nbsp;') 
+        //     }
+        //     for(let z = 0; z < y; z++){
+        //         document.write('*') 
+        //     }
+        //     y += 2
+        //     center-- //43210
+        //     document.write('<br>')
+        // }
+
+        //4번
+        // x=1
+        // while(x < 10){
+        //     y=1
+        //     document.write(x+'단입니다.<br>')
+        //     while(y < 10){
+        //         document.write(x*y+'<br>')
+        //         y +=1
+        //     }
+        //     x +=1
+        // }
+
+        //5번
+        // x = prompt('x~|x ∈ y');
+        // y = prompt('y');
+        // while(x <= y){
+        //     j=1;
+        //     document.write(x+'단입니다.<br>');
+        //     while(j < 10){
+        //         document.write((x*j)+'<br>');
+        //         j++;
+        //     }
+        //     x++;
+        // }
+
+        // 6번
+        let x = parseInt(prompt('x'));
+        let y = parseInt(prompt('y')); 
+        let s = prompt('y'); 
+        while(True){
+            if(s == q){
+                break;
+            }
+            else{
+                switch(s){
+                    case '+':{
+                        document.write(x+y);
+                        break;}
+                    
+                    case '-':{
+                        document.write(x-y);
+                        break;}
+                    
+                    case '/':{
+                        document.write(x/y);
+                        break;}
+                    
+                    case '*':{
+                        document.write(x*y);
+                        break;}
+                    default:{
+                        document.write(x,y);}
+                }
+            }
+        }
+    </script>
+</body>
+</html>
