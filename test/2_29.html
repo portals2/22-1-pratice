@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        // function ch(img){
+        //     let myNum = document.getElementById('num');
+        //     myNum.src = img;
+            
+        // }
+
+    </script> -->
+    <!-- ------------------------------------>
+    <script>
+        function ch(neww){
+            letters = document.getElementsByTagName('img');
+            letters[4].src = neww;
+        }
+    </script>
+
+</head>
+<body>
+    <!-- <div>
+        <ul>
+            <li><a onclick="ch('png_1.png')">png</a></li>
+            <li><a onclick="ch('#')">aaa</a></li>
+            <li><a onclick="ch('bach.jpg')">bach.jpg</a></li>
+        </ul>
+    </div>
+    <div>
+        <img src="#" id="num" height="100%">
+    </div> -->
+    <!-- <script>
+        function sums(num){
+            let sum = 0;
+
+            for (i=1; i<=num;i++){
+                sum += i;
+            }
+            return sum;
+        }
+
+        function disp(num){
+            returnvalue = sums(num);
+            alert(num+'은'+returnvalue);
+        }
+
+        disp(10)
+
+    </scrip> -->
+    <!-- <p class="accent">신입생</p>
+    <p><span class="accent">웹표준</span>에 대해</p>
+
+    <script>
+        list = document.getElementsByClassName("accent");
+        document.write('<hr>')
+        document.write('<h3>accent 클래스</h3>')
+        for (i=0; i<list.length; i++){
+            document.write(list[i].textContent + '<br>');           
+        }
+    </> -->
+
+    <!-- <img src="bach.jpg" id="logo" alt="HTML">
+    <script>
+        img = document.getElementById('logo');
+        document.write("<p>이미지 <span>"+img.alt+"</span>입니다</p>")
+    </script> -->
+    <!-- ------------------------------------>
+    <img src="h.jpg">
+    <img src="t.jpg">
+    <img src="m.jpg">
+    <img src="l.jpg" onclick="ch('5.jpg')">
+    <!-- ------------------------------------>
+    <div>
+        <img src="bach.jpg" id="num" onmouseover="ch('png_1.png')" onmouseout="ch('bach.jpg')"
+    </div>
+</body>
+</html>
