@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>왓 맛?ko</title>
+    <style>
+        .navi{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #263343;
+            padding: 8px 12px;
+
+        }
+        .header{
+            display: flex;  
+            padding: 8px 12px;
+            align-items: center;
+        }
+        #but_{
+            flex-basis: 20%;
+        }
+        #sim{
+            flex-basis: 20%;
+        }
+        #in_but{
+            margin-left: auto;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: blueviolet;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+        }
+        .navi_menu{
+            display: flex;
+            list-style: none;
+            font-size: 20px;
+        }
+        .navi_menu li{
+            padding: 8px 12px;
+        }
+        .main{
+            display: flexbox;
+            border: 5px solid black;
+            padding-right: 3px;
+            margin: 0px 100px 0px 100px;
+        }
+        .main_in{
+            display: flexbox;
+            margin: 3px 3px 3px 3px;
+            border: 2px solid blue;
+            flex-basis:50%
+        }
+        .main_side{
+            display: flexbox;
+            margin: 3px 3px 3px 3px;
+            flex-basis:100%;
+
+        }
+        .main_but{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+
+        }
+        #img{
+            display: flexbox;
+            border: 2px solid blue;
+            width: 25%;
+            height: 100%;
+            flex-basis:50%;
+        }
+        .sel{
+            display: flex;
+            border: 2px solid green;
+            margin-right: 10px;
+            flex-basis:100%;
+            height: 100%;
+            width: 100%;
+        }
+        p{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        button{
+            background-color: #4a63f0;
+            border: none;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 30px;
+        }
+        input {
+            font-size: 15px;
+            border: 0;
+            border-radius: 30px;
+            outline: none;
+            padding-left: 10px;
+            background-color: rgb(233, 233, 233);
+            padding: 15px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a id="but_" href="#">즐겨찾기</a>
+        <a id="sim"><img src="#">심볼</a>
+        <input id="search_input" type="text" placeholder="검색어 입력">
+        <button id="ser_but">검색</button>
+        <button id="in_but">로그인</button>
+        <button id="up_but">회원가입</button>
+    </div>
+    <hr>
+    <nav class='navi'>
+        <ul class="navi_menu">
+            <li><a href="#">컵라면</a></li>
+            <li><a href="#">봉지라면</a></li>
+            <li><a href="#">먹을거</a></li>
+            <li><a href="#">먹을거</a></li>
+            <li><a href="#">냉동식품</a></li>
+        </ul>        
+    </nav>
+    <hr>
+    <div class="main_but">
+        <button id="main_but1">검색</button>
+        <button id="main_but2">업로드</button>  
+        <button id="main_but2">정렬</button>     
+    </div>
+    <div class="main">
+        <div class="main_side">
+            <div class="sel">
+                <img id="img" src="1.png">
+                <p>asda</p>
+                <img id="img" src="1.png">
+                <p>asda</p>
+            </div>
+            <div class="sel">
+                <img id="img" src="1.png">
+                <p>asda</p>
+                <img id="img" src="1.png">
+                <p>asda</p>
+            </div>
+        </div>
+    </div>
+    <div class="main_but">
+        <button id="main_but1">이전</button>
+        <button id="main_but2">다음</button>       
+    </div>
+
+    <hr>
+    <div class="dv">
+        <div>개발자</div>
+    </div>
+
+</body>
+</html>

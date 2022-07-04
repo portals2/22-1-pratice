@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>왓 맛?ko</title>
+    <style>
+        .navi{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #263343;
+            padding: 8px 12px;
+
+        }
+        .header{
+            display: flex;  
+            padding: 8px 12px;
+            align-items: center;
+        }
+        #but_{
+            flex-basis: 20%;
+        }
+        #sim{
+            flex-basis: 20%;
+        }
+        #in_but{
+            margin-left: auto;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            cursor: pointer
+        }
+        a:hover{
+            color: blueviolet;
+        }        
+        li a{
+            text-decoration: none;
+            color: white;
+        }
+        .navi_menu{
+            display: flex;
+            list-style: none;
+            font-size: 20px;
+        }
+        .navi_menu li{
+            padding: 8px 12px;
+        }
+        .main{
+            display: flex;
+            border: 5px solid black;
+            margin: 0px 100px 0px 100px;
+        }
+        .main_in{
+            display: flexbox;
+            margin: 3px 3px 3px 3px;
+            border: 2px solid blue;
+            flex-basis:50%
+        }
+        .main_side{
+            display: flexbox;
+            margin: 3px 3px 3px 3px;
+            border: 2px solid red;
+            flex-basis:50%;
+            text-align: center;
+            justify-content: center;
+
+        }
+        #mine_but{
+            margin-left: 90%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        #img{
+            display: flexbox;
+            border: 2px solid blue;
+            width: 45%;
+            height: 45%;
+            flex-basis:50%; 
+            margin-top: 5px;
+        }
+        button{
+            background-color: #4a63f0;
+            border: none;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 30px;
+        }
+        input {
+            font-size: 15px;
+            border: 0;
+            border-radius: 30px;
+            outline: none;
+            padding-left: 10px;
+            background-color: rgb(233, 233, 233);
+            padding: 15px 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a id="but_" href="#">즐겨찾기</a>
+        <a id="sim"><img src="#">심볼</a>
+        <input id="search_input" type="text" placeholder="검색어 입력">
+        <button id="ser_but">검색</button>
+        <button id="in_but">로그인</button>
+        <button id="up_but">회원가입</button>
+    </div>
+    <hr>
+    <nav class='navi'>
+        <ul class="navi_menu">
+            <li><a href="#">컵라면</a></li>
+            <li><a href="#">봉지라면</a></li>
+            <li><a href="#">먹을거</a></li>
+            <li><a href="#">먹을거</a></li>
+            <li><a href="#">냉동식품</a></li>
+        </ul>        
+    </nav>
+    <hr>
+    <div class="main">
+        <div class="main_in" >사이트 소개aaaaaaaaaaa</div>
+        <div class="main_side">
+            <div class="img1">
+                <img id="img" src="1.png">
+                <img id="img" src="2.png">
+            </div>
+            <div class="img2">
+                <img id="img" src="3.png">
+                <img id="img" src="4.png">
+            </div>
+        </div>
+    </div>
+    <button id="mine_but">업로드</button>
+    <hr>
+    <div class="dv">
+        <div>개발자</div>
+    </div>
+
+</body>
+</html>
