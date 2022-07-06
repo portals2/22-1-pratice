@@ -1,3 +1,6 @@
+<!-- https://blogpack.tistory.com/862  flex 설명-->
+<!-- https://opentutorials.org/course/2418/13526 flex 설명2 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +21,7 @@
             display: flex;  
             padding: 8px 12px;
             align-items: center;
+            flex-wrap: wrap;
         }
         #but_{
             flex-basis: 20%;
@@ -57,7 +61,9 @@
             display: flexbox;
             margin: 3px 3px 3px 3px;
             border: 2px solid blue;
-            flex-basis:50%
+            flex-basis:50%;
+            font-size: large;
+            
         }
         .main_side{
             display: flexbox;
@@ -77,9 +83,10 @@
             display: flexbox;
             border: 2px solid blue;
             width: 45%;
-            height: 45%;
+            height: 50%;
             flex-basis:50%; 
             margin-top: 5px;
+            
         }
         button{
             background-color: #4a63f0;
@@ -100,43 +107,54 @@
             background-color: rgb(233, 233, 233);
             padding: 15px 15px;
         }
+        @media screen and (max-width:767px){
+            .navi{
+                flex-direction: column;
+            }
+            .navi_menu{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
 
     </style>
 </head>
 <body>
     <div class="header">
-        <a id="but_" href="#">즐겨찾기</a>
-        <a id="sim"><img src="#">심볼</a>
-        <input id="search_input" type="text" placeholder="검색어 입력">
-        <button id="ser_but">검색</button>
+        <a id="but_" href="">즐겨찾기</a>
+        <a id="sim" href="https://smoda.kr/p1/js/home_page.html"><img src="#">심볼</a>
+        <div>
+            <input id="search_input" type="text" placeholder="검색어 입력">
+            <button id="ser_but">검색</button>
+        </div>  
         <button id="in_but">로그인</button>
         <button id="up_but">회원가입</button>
     </div>
     <hr>
     <nav class='navi'>
         <ul class="navi_menu">
-            <li><a href="#">컵라면</a></li>
-            <li><a href="#">봉지라면</a></li>
-            <li><a href="#">먹을거</a></li>
-            <li><a href="#">먹을거</a></li>
-            <li><a href="#">냉동식품</a></li>
+            <li><a href="https://smoda.kr/p1/js/cup.html">컵라면</a></li>
+            <li><a href="#" onclick="alert('컵라면과 동일')">봉지라면</a></li>
+            <li><a href="#" onclick="alert('컵라면과 동일')">먹을거</a></li>
+            <li><a href="#" onclick="alert('컵라면과 동일')">먹을거</a></li>
+            <li><a href="#" onclick="alert('컵라면과 동일')">냉동식품</a></li>
         </ul>        
     </nav>
     <hr>
     <div class="main">
-        <div class="main_in" >사이트 소개aaaaaaaaaaa</div>
+        <div class="main_in" >중국의 즉석식품에 대한 소개</div>
         <div class="main_side">
             <div class="img1">
-                <img id="img" src="1.png">
-                <img id="img" src="2.png">
+                <img id="img" src='ch_cup.jpg'>
+                <img id="img" src="ch_ra.png">
             </div>
             <div class="img2">
-                <img id="img" src="3.png">
-                <img id="img" src="4.png">
+                <img id="img" src="ch.jpg">
+                <img id="img" src="ch_fz.jpg">
             </div>
         </div>
     </div>
-    <button id="mine_but">업로드</button>
     <hr>
     <div class="dv">
         <div>개발자</div>
