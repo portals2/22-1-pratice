@@ -23,6 +23,15 @@
         #but_{
             flex-basis: 20%;
         }
+        #star{
+            width: 30px;
+            height: 30px;
+        }
+        #logo{
+            width: 100px;
+            height: 100px;
+            
+        }
         #sim{
             flex-basis: 20%;
         }
@@ -95,6 +104,7 @@
             
             margin-right: 10%;
             margin-left: 10px;
+            
         }
         button{
             background-color: #4a63f0;
@@ -124,12 +134,13 @@
                 align-items: center;
             }
         }
+
     </style>
 </head>
 <body>
     <div class="header">
-        <a id="but_" href="#">즐겨찾기</a>
-        <a id="sim" href="https://smoda.kr/p1/js/home_page.html"><img src="#">심볼</a>
+        <a id="but_" href=""><img id="star" src="star1.png" alt=""></a>
+        <a id="sim" href="https://smoda.kr/p1/js/home_page.html"><img id="logo" src="logo.png"></a>
         <div>
             <input id="search_input" type="text" placeholder="검색어 입력">
             <button id="ser_but">검색</button>
